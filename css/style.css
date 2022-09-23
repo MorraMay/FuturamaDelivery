@@ -3,11 +3,11 @@
 
 :root{
     /*colors*/
-    --primary: #FDB827;
-    --secondary: #eba91b;
-    --haki: #233506;
+    --primary: #aed442;
+    --secondary: #d0bd28;
+    --haki: #aaafa1;
     --light: #fff;
-    --bg: #FFF9F2;
+    --bg: #100f0f;
 
 
    /*contentWidth*/
@@ -22,7 +22,7 @@
 
 body{
     font-family: 'Fredoka';
-    background-color: #fff;
+    background-color: #2b2929;
     color: var(--haki);
     font-size: 18px;
 }
@@ -69,7 +69,7 @@ a {
 }
 .first-screen__title{
     font-size: 84px;
-    line-height: 100px;
+    line-height: 90px;
     font-weight: 900;
 }
 .first-screen__title span{
@@ -86,9 +86,9 @@ a {
 }
 .first-screen__bg-segment img{
     position: absolute;
-    top: 5%;
-    right: 0;
-    width: 240%;
+    top: 18%;
+    right: 15%;
+    width: 110%;
 }
 .first-screen .content{
     display: flex;
@@ -147,7 +147,7 @@ a {
 .button{
     padding: 16px 22px;
     background-color: var(--primary);
-    color: var(--light);
+    color: var(--bg);
     border-radius: 50px;
     font-size: 18px;
     line-height: 18px;
@@ -156,13 +156,13 @@ a {
     transition: all 0.4s;
 }
 .button:hover{
-    box-shadow: 0 2px 15px #00b0d76e,
-    0 17px 121px #00b0d736;
+    box-shadow: 0 2px 15px #0404046e,
+    0 17px 121px #2d2f2f36;
     
 }
 .button_light{
     background-color: var(--light);
-    color: var(--secondary);
+    color: var(--bg);
 }
 .button_xl {
     position: relative;
@@ -184,7 +184,8 @@ a {
 
 /*title*/
 .title{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 70px;
     line-height: 82px;
     font-weight: 600px;
@@ -199,7 +200,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: -14px;
-    margin-top: 50px;
+    margin-bottom: 30px;
     
 }
 .card{
@@ -241,7 +242,7 @@ a {
 .card .button {
     padding: 10px 36px;
     border-radius: 8px;
-    color: var(--haki);
+    color: var(--bg);
 }
 .card .button:hover{
     background-color: #00AFD7;
@@ -258,9 +259,8 @@ a {
 }
 
 .how-work__img {
-    margin-right: 140px;
+    margin-right: 70px;
 }
-
 .how-work__description {
     line-height: 32px;
     opacity: 0.75;
@@ -310,7 +310,7 @@ a {
     position: absolute;
     top: 50%;
     margin-top: calc(var(--size) / -2);
-    left: 0;
+    left: 4.5%;
 }
 /*about us*/
 .about {
@@ -327,7 +327,7 @@ a {
     position: absolute;
     top: 50%;
     margin-top: calc(var(--size) / -2);
-    right: 0;
+    right: 1.7%;
 }
 .about  .content {
     position: relative;
@@ -342,7 +342,8 @@ a {
 }
 
 .about__img {
-    margin-left: 126px;
+    margin-left: 136px;
+    width: 50%;
 }
 
 /*Rewiew*/
@@ -382,13 +383,13 @@ a {
     color: var(--primary);
     cursor: pointer;
     border-radius: var(--size);
-    background-color: var(--light);
+    background-color: var(--bg);
     border: 1px solid var(--primary);
 
 }
 .slider__button:hover{
     color: var(--light);
-    background-color: var(--primary);
+    background-color: var(--haki);
     border-color: var(--light);
 }
 .slider__button_prev{
@@ -442,12 +443,16 @@ left: 50px;
 .customer__review {
     line-height: 30px;
     margin-bottom: 30px;
+    color: var(--bg);
 }
 .customer__info {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .customer__avatar {
+    width: 25%;
+    left: 0;
 }
 .customer__user {
     margin-left: 20px;
@@ -455,10 +460,12 @@ left: 50px;
 }
 .customer__user strong{
     display: block;
+    color: var(--bg);
     opacity: 0.8;
 }
 .customer__user span{
     font-weight: 300;
+    color: var(--bg);
     opacity: 0.68;
 }
 
@@ -532,5 +539,5 @@ left: 50px;
     margin-top: 10px;
     text-align: center;
     font-weight: 300;
-    color: #375465;
+    color: var(--light);
 }
